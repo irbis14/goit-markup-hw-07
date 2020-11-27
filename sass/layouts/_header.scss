@@ -93,17 +93,17 @@
 .contacts-header:hover,
 .contacts-header:focus {
   border-color: $accent-cl;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .contacts-header:hover .envelope-svg,
 .contacts-header:focus .envelope-svg {
   fill: $accent-cl;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .contacts-header:hover .smartphone-svg,
 .contacts-header:focus .smartphone-svg {
   fill: $accent-cl;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }

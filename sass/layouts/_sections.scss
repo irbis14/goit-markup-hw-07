@@ -121,3 +121,83 @@
   background: rgba(47, 48, 58, 0.8);
   color: $white;
 }
+
+/* Наша команда */
+
+.card-grid {
+  margin-right: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: $white;
+}
+
+.team-member {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  color: $black;
+}
+
+.team-job {
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+}
+
+.join-list .join-item {
+  margin-bottom: 30px;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Постоянные клиенты */
+
+.clients-grid {
+  margin-right: 30px;
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  text-align: center;
+  border: 1px solid $icon;
+  border-radius: 4px;
+}
+
+.clients-icons-svg {
+  height: 45px;
+  fill: $icon;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: $accent-cl;
+  transition: 250ms $cubic;
+}
+
+.clients-link:hover .clients-icons-svg,
+.clients-link:focus .clients-icons-svg {
+  fill: $accent-cl;
+  transition: 250ms $cubic;
+}

@@ -61,7 +61,7 @@ img {
 .link:hover,
 .link:focus {
   color: var(--accent-cl);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .list {
@@ -191,19 +191,19 @@ img {
 .contacts-header:hover,
 .contacts-header:focus {
   border-color: var(--accent-cl);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .contacts-header:hover .envelope-svg,
 .contacts-header:focus .envelope-svg {
   fill: var(--accent-cl);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .contacts-header:hover .smartphone-svg,
 .contacts-header:focus .smartphone-svg {
   fill: var(--accent-cl);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 /* Примеры работ */
@@ -244,7 +244,7 @@ img {
 .btn:focus {
   color: var(--white);
   background-color: var(--accent-cl);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .filter {
@@ -307,7 +307,7 @@ img {
 .link-grid:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .overlay-thumb {
@@ -330,7 +330,7 @@ img {
   background: rgba(33, 150, 243, 0.9);
 
   opacity: 0;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms $cubic;
 }
 
 .link-grid:hover .overlay-lable {
@@ -421,7 +421,7 @@ img {
 .social-icons-link:hover,
 .social-icons-link:focus {
   background-color: var(--accent-cl);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 /* Форма для рассылки */
@@ -486,13 +486,13 @@ img {
 .subscribe-btn:focus {
   color: var(--accent-cl);
   background-color: var(--white);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 .subscribe-btn:hover .subscribe-btn-svg,
 .subscribe-btn:focus .subscribe-btn-svg {
   fill: var(--accent-cl);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $cubic;
 }
 
 /* Оформление автозаполнения */
