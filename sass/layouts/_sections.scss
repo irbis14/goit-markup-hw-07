@@ -26,8 +26,7 @@
 }
 
 // Попробовать переписать!
-
-.advantage-icon-1::before {
+.advantage-icon::before {
   display: flex;
   content: "";
   height: 120px;
@@ -36,53 +35,26 @@
 
   background: #f5f4fa;
   border-radius: 4px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantage-icon:nth-child(1)::before {
   background-image: url("../image/logo/antenna.svg");
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.advantage-icon-2::before {
-  display: flex;
-  content: "";
-  height: 120px;
-  width: 270px;
-  margin-bottom: 30px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
+.advantage-icon:nth-child(2)::before {
   background-image: url("../image/logo/clock.svg");
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.advantage-icon-3::before {
-  display: flex;
-  content: "";
-  height: 120px;
-  width: 270px;
-  margin-bottom: 30px;
 
-  background: #f5f4fa;
-  border-radius: 4px;
+.advantage-icon:nth-child(3)::before {
   background-image: url("../image/logo/diagram.svg");
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.advantage-icon-4::before {
-  display: flex;
-  content: "";
-  height: 120px;
-  width: 270px;
-  margin-bottom: 30px;
 
-  background: #f5f4fa;
-  border-radius: 4px;
+.advantage-icon:nth-child(4)::before {
   background-image: url("../image/logo/astronaut.svg");
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /* Чем мы занимаемся */
