@@ -16,58 +16,16 @@
   border-radius: 4px;
   background-color: transparent;
   color: $white;
-}
 
-.subscribe-mail::placeholder,
-.subscribe-mail::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-.subscribe-mail:hover,
-.subscribe-mail:focus {
-  outline: none;
-  border: 1px solid $accent-cl;
-}
-
-.subscribe-btn {
-  @extend %btn;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 12px;
-
-  height: 50px;
-  width: 200px;
-}
-
-.subscribe-btn-svg {
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-  fill: $white;
-  background-color: transparent;
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-  color: $accent-cl;
-  background-color: $white;
-  transition: 250ms $cubic;
-}
-
-.subscribe-btn:hover .subscribe-btn-svg,
-.subscribe-btn:focus .subscribe-btn-svg {
-  fill: $accent-cl;
-  transition: 250ms $cubic;
-}
-
-/* Оформление автозаполнения */
-
-.subscribe-mail:-webkit-autofill,
-.subscribe-mail:-webkit-autofill:hover,
-.subscribe-mail:-webkit-autofill:focus {
-  -webkit-text-fill-color: $white;
-  -webkit-box-shadow: 0 0 0px 1000px $bg-dark inset;
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-cl;
+  }
 }
 
 /* Форма модального окна */
@@ -77,23 +35,33 @@
 
   width: 448px;
   height: 342px;
-}
 
-.form-list {
-  line-height: 1.2;
-}
+  &-list {
+    line-height: 1.2;
+  }
 
-.form-items {
-  position: relative;
-}
+  &-items {
+    position: relative;
+  }
 
-.form-lable {
-  display: block;
-  padding-bottom: 4px;
+  &-lable {
+    display: block;
+    padding-bottom: 4px;
 
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+  }
+
+  &-input {
+    padding-left: 42px;
+    margin-bottom: 10px;
+    height: 40px;
+
+    font-size: 12px;
+    line-height: 1.666;
+    letter-spacing: 0.01em;
+  }
 }
 
 .form-items .form-input,
@@ -101,28 +69,10 @@
   width: 448px;
   padding-top: 12px;
   padding-bottom: 12px;
-  /* margin-top: 4px; */
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: $black;
-}
-
-.form-input {
-  padding-left: 42px;
-  margin-bottom: 10px;
-  height: 40px;
-
-  font-size: 12px;
-  line-height: 1.666;
-  letter-spacing: 0.01em;
-}
-
-.form-input:-webkit-autofill,
-.form-input:-webkit-autofill:hover,
-.form-input:-webkit-autofill:focus {
-  -webkit-text-fill-color: $black;
-  -webkit-box-shadow: 0 0 0px 1000px $white inset;
 }
 
 .form-input-svg {
@@ -156,13 +106,13 @@
   padding-left: 16px;
   padding-right: 16px;
   resize: none;
-}
 
-.form-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .policy {
@@ -171,6 +121,10 @@
   justify-content: center;
 
   margin-top: 20px;
+
+  &-lable {
+    padding-left: 15px;
+  }
 }
 
 .link-policy {
@@ -178,17 +132,7 @@
   color: $accent-cl;
 }
 
-.policy-lable {
-  padding-left: 15px;
-}
-
-/* .checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-} */
-
-.icon {
+.checkbox-icon {
   position: absolute;
   top: 0;
   left: 10px;
@@ -201,7 +145,7 @@
   border-radius: 2px;
 }
 
-.checkbox:checked + .icon {
+.checkbox:checked + .checkbox-icon {
   border-color: $accent-cl;
   background-color: $accent-cl;
   background-image: url("../image/logo/icon-check.svg");
@@ -209,15 +153,31 @@
   background-origin: border-box;
 }
 
-.checkbox:hover + .icon,
-.checkbox:focus + .icon {
+.checkbox:hover + .checkbox-icon,
+.checkbox:focus + .checkbox-icon {
   border-color: $accent-cl;
   transition: 250ms $cubic;
 }
 
-.form .subscribe-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+/* Оформление автозаполнения */
+
+.subscribe-mail:-webkit-autofill,
+.subscribe-mail:-webkit-autofill:hover,
+.subscribe-mail:-webkit-autofill:focus {
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0px 1000px $bg-dark inset;
 }
+
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover,
+.form-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: $black;
+  -webkit-box-shadow: 0 0 0px 1000px $white inset;
+}
+
+// Скрываем чекбокс
+/* .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */

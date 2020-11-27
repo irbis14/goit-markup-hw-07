@@ -1,23 +1,25 @@
-.dark-bg .logo {
-  color: $white;
-}
+.dark-bg {
+  & .logo {
+    color: $white;
+  }
 
-.dark-bg .advantage-lable {
-  color: $white;
-  margin-bottom: 20px;
+  & .advantage-lable {
+    color: $white;
+    margin-bottom: 20px;
+  }
 }
 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer .container {
-  display: flex;
-}
+  & .container {
+    display: flex;
+  }
 
-.footer .address {
-  margin-top: 20px;
+  & .address {
+    margin-top: 20px;
+  }
 }
 
 .contacts-adress {
@@ -38,16 +40,18 @@
   margin-bottom: 10px;
 }
 
-.join {
+.footer-join {
   margin-left: 70px;
 }
 
-.footer .social-icons-link {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+.footer {
+  & .social-icons-link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 
-.footer .social-icons-svg {
-  fill: $white;
+  & .social-icons-svg {
+    fill: $white;
+  }
 }
 
 .social-icons-link:hover,

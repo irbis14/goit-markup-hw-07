@@ -1,0 +1,62 @@
+// Кнопка "Заказать услугу"
+
+.btn-hero {
+  @extend %btn;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 200px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+// Кпопка "Подписаться"
+.subscribe-btn {
+  @extend %btn;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+
+  height: 50px;
+  width: 200px;
+}
+
+.subscribe-btn-svg {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $white;
+  background-color: transparent;
+}
+
+// Кпопка формы "Отправить"
+
+.form-btn {
+  @extend %btn;
+  display: block;
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.btn-hero:hover,
+.btn-hero:focus,
+.subscribe-btn:hover,
+.subscribe-btn:focus,
+.form-btn:hover,
+.form-btn:focus {
+  color: $accent-cl;
+  background-color: $white;
+  transition: 250ms $cubic;
+}
+
+.subscribe-btn:hover .subscribe-btn-svg,
+.subscribe-btn:focus .subscribe-btn-svg {
+  fill: $accent-cl;
+  transition: 250ms $cubic;
+}

@@ -97,11 +97,7 @@
 }
 
 .contacts-header:hover .envelope-svg,
-.contacts-header:focus .envelope-svg {
-  fill: $accent-cl;
-  transition: 250ms $cubic;
-}
-
+.contacts-header:focus .envelope-svg,
 .contacts-header:hover .smartphone-svg,
 .contacts-header:focus .smartphone-svg {
   fill: $accent-cl;

@@ -25,7 +25,6 @@
   color: $black;
 }
 
-// Попробовать переписать!
 .advantage-icon::before {
   display: flex;
   content: "";
@@ -166,10 +165,9 @@
 .clients-link:focus {
   border-color: $accent-cl;
   transition: 250ms $cubic;
-}
 
-.clients-link:hover .clients-icons-svg,
-.clients-link:focus .clients-icons-svg {
-  fill: $accent-cl;
-  transition: 250ms $cubic;
+  & .clients-icons-svg {
+    fill: $accent-cl;
+    transition: 250ms $cubic;
+  }
 }
