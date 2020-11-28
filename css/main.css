@@ -85,57 +85,17 @@ img {
   padding-left: 15px;
 }
 
-.btn-hero {
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.subscribe-btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 12px;
-  height: 50px;
-  width: 200px;
-}
-
-.subscribe-btn-svg {
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-  fill: #ffffff;
-  background-color: transparent;
-}
-
-.form-btn {
-  display: block;
-  height: 50px;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-}
-
-.btn-hero:hover,
-.btn-hero:focus,
-.subscribe-btn:hover,
-.subscribe-btn:focus,
-.form-btn:hover,
-.form-btn:focus {
-  color: #2196f3;
-  background-color: #ffffff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subscribe-btn:hover .subscribe-btn-svg,
-.subscribe-btn:focus .subscribe-btn-svg {
-  fill: #2196f3;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.btn-hero, .subscribe-btn, .form-btn {
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .logo {
@@ -151,7 +111,6 @@ img {
   color: #2196f3;
 }
 
-/* Шапка сайта */
 .main-nav {
   display: flex;
   align-items: center;
@@ -168,6 +127,10 @@ img {
 
 .header .logo {
   margin-right: 90px;
+}
+
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
 }
 
 .menu-item {
@@ -211,6 +174,10 @@ img {
   margin-left: auto;
 }
 
+.cont-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts-header {
   display: flex;
   align-items: center;
@@ -221,10 +188,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.cont-item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .envelope-svg {
@@ -285,16 +248,20 @@ img {
   color: #ffffff;
 }
 
-.btn-hero, .subscribe-btn, .form-btn {
-  border: 1px solid transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+.btn-hero {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn-hero:hover, .btn-hero:focus {
+  color: #2196f3;
+  background-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Наши преимущества */
@@ -411,19 +378,6 @@ img {
   line-height: 1.187;
 }
 
-.join-list {
-  display: flex;
-  justify-content: center;
-}
-
-.join-list .join-item {
-  margin-bottom: 30px;
-}
-
-.join-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 /* Постоянные клиенты */
 .clients-grid {
   margin-right: 30px;
@@ -456,6 +410,19 @@ img {
 .clients-link:focus .clients-icons-svg {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+}
+
+.join-list .join-item {
+  margin-bottom: 30px;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icons {
@@ -548,6 +515,69 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Форма для рассылки в футере */
+.subscribe {
+  margin-left: 93px;
+}
+
+.subscribe-mail {
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.subscribe-mail::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-mail:hover, .subscribe-mail:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  height: 50px;
+  width: 200px;
+}
+
+.subscribe-btn-svg {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+  background-color: transparent;
+}
+
+.subscribe-btn:hover, .subscribe-btn:focus {
+  color: #2196f3;
+  background-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover .subscribe-btn-svg,
+.subscribe-btn:focus .subscribe-btn-svg {
+  fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Оформление автозаполнения */
+.subscribe-mail:-webkit-autofill,
+.subscribe-mail:-webkit-autofill:hover,
+.subscribe-mail:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #2f303a inset;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -611,32 +641,6 @@ img {
   text-align: center;
   color: #212121;
   margin-bottom: 12px;
-}
-
-/* Форма для рассылки в футере */
-.subscribe {
-  margin-left: 93px;
-}
-
-.subscribe-mail {
-  padding-left: 16px;
-  height: 50px;
-  width: 358px;
-  font-size: 16px;
-  line-height: 1.25;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: transparent;
-  color: #ffffff;
-}
-
-.subscribe-mail::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.subscribe-mail:hover, .subscribe-mail:focus {
-  outline: none;
-  border: 1px solid #2196f3;
 }
 
 /* Форма модального окна */
@@ -761,14 +765,22 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Оформление автозаполнения */
-.subscribe-mail:-webkit-autofill,
-.subscribe-mail:-webkit-autofill:hover,
-.subscribe-mail:-webkit-autofill:focus {
-  -webkit-text-fill-color: #ffffff;
-  -webkit-box-shadow: 0 0 0px 1000px #2f303a inset;
+.form-btn {
+  display: block;
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
+.form-btn:hover, .form-btn:focus {
+  color: #2196f3;
+  background-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Оформление автозаполнения */
 .form-input:-webkit-autofill,
 .form-input:-webkit-autofill:hover,
 .form-input:-webkit-autofill:focus {

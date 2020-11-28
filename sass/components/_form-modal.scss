@@ -1,33 +1,3 @@
-/* Форма для рассылки в футере */
-
-.subscribe {
-  margin-left: 93px;
-}
-
-.subscribe-mail {
-  padding-left: 16px;
-
-  height: 50px;
-  width: 358px;
-
-  font-size: 16px;
-  line-height: 1.25;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: transparent;
-  color: $white;
-
-  &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  &:hover,
-  &:focus {
-    outline: none;
-    border: 1px solid $accent-cl;
-  }
-}
-
 /* Форма модального окна */
 
 .form {
@@ -159,14 +129,26 @@
   transition: 250ms $cubic;
 }
 
-/* Оформление автозаполнения */
+// Кпопка формы "Отправить"
 
-.subscribe-mail:-webkit-autofill,
-.subscribe-mail:-webkit-autofill:hover,
-.subscribe-mail:-webkit-autofill:focus {
-  -webkit-text-fill-color: $white;
-  -webkit-box-shadow: 0 0 0px 1000px $bg-dark inset;
+.form-btn {
+  @extend %btn;
+  display: block;
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  &:hover,
+  &:focus {
+    color: $accent-cl;
+    background-color: $white;
+    transition: 250ms $cubic;
+  }
 }
+
+/* Оформление автозаполнения */
 
 .form-input:-webkit-autofill,
 .form-input:-webkit-autofill:hover,

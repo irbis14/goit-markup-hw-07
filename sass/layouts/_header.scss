@@ -1,4 +1,3 @@
-/* Шапка сайта */
 .main-nav {
   display: flex;
   align-items: center;
@@ -13,8 +12,14 @@
   display: flex;
 }
 
-.header .logo {
-  margin-right: 90px;
+.header {
+  & .logo {
+    margin-right: 90px;
+  }
+
+  &-portfolio {
+    border-bottom: 1px solid $border-header;
+  }
 }
 
 .menu-item {
@@ -23,40 +28,44 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $black;
-}
 
-.menu-item:not(:last-child) {
-  margin-right: 50px;
-}
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 
-.menu-item .link {
-  display: block;
-  /* Паддинги добавлены для большей области действия ховера */
-  padding-top: 32px;
-  padding-bottom: 32px;
+  & .link {
+    display: block;
+    /* Паддинги добавлены для большей области действия ховера */
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .current {
   position: relative;
   color: $accent-cl;
-}
 
-.current::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: $accent-cl;
-  border-radius: 2px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-cl;
+    border-radius: 2px;
+  }
 }
 
 .cont {
   display: flex;
   margin-left: auto;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts-header {
@@ -70,10 +79,6 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.cont-item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .envelope-svg {

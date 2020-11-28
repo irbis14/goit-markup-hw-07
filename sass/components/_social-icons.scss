@@ -1,3 +1,16 @@
+.join-list {
+  display: flex;
+  justify-content: center;
+
+  & .join-item {
+    margin-bottom: 30px;
+  }
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-icons {
   display: flex;
 
