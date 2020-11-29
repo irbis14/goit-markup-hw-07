@@ -15,11 +15,13 @@
   text-align: center;
   color: $black;
   background-color: $bg-gray;
+  box-shadow: none;
 
   &:hover,
   &:focus {
     color: $white;
     background-color: $accent-cl;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 250ms $cubic;
   }
 }
